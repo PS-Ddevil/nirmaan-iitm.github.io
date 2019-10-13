@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import building from './img/building.gif';
+import { SocialIcon } from 'react-social-icons';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <img src={building} alt="building" id="building"/>
+        <h2>Men at Work</h2>
+        <SocialIcon url="https://www.facebook.com/nirmaaniitmandi/" className="socialicon"/>
+        <SocialIcon url="https://github.com/nirmaan-iitm" className="socialicon"/>
+        <SocialIcon url="https://www.linkedin.com/company/nirmman-iit-mandi/" className="socialicon"/>
+        <SocialIcon url="mailto:nirmaan_club@students.iitmandi.ac.in" className="socialicon"/>
     </div>
   );
 }
