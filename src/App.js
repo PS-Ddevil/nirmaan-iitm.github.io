@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import building from './img/building.gif';
 import { SocialIcon } from 'react-social-icons';
+import TopNavbar from './components/layout/TopNavbar'
 
 function App() {
   return (
     <div className="App">
+        <TopNavbar/>
         <img src={building} alt="building" id="building"/>
         <h2>Men at Work</h2>
         <SocialIcon url="https://www.facebook.com/nirmaaniitmandi/" className="socialicon"/>
